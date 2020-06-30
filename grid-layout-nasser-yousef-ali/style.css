@@ -1,0 +1,97 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101010;
+  box-shadow: 0px 5px 20px #000;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.menu li a:hover {
+  background-color: #333;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 
+  "sidenav item item"
+  "sidenav item item"
+  "sidenav item item"
+  "footer footer footer";
+  grid-gap: 20px;
+}
+
+.container div {
+  /* flex: 1 1 300px;
+  margin: 10px; */
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.sidenav {
+  width: 300px;
+  height: 900px;
+  background-color: #333;
+  border-radius: 20px;
+  grid-area: "sidenav";
+  grid-row: sidenav;
+}
+
+.item {
+  max-width: 300px;
+  min-width: 200px;
+  height: 300px;
+  background-color: #333;
+  border-radius: 20px;
+  grid-area: "item";
+}
+
+.footer {
+  width: auto;
+  height: 300px;
+  background-color: #333;
+  border-radius: 20px;
+  grid-area: "footer";
+  grid-column: footer;
+}

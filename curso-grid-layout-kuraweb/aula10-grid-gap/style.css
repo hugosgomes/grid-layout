@@ -1,0 +1,11 @@
+@import url('./config.css');
+
+.grid-container {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-gap: Espaçamento entre linhas e colunas */
+  /* grid-column-gap: 10px; */
+  /* grid-row-gap: 10px; */
+  grid-gap: 10px;
+}
